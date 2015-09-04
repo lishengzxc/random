@@ -2,10 +2,15 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  border-right: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5) inset;
   background-color: #bbb;
   width: 60vw;
-  transform: translateX(-50%);
+  transform: translateX(-60%);
+  transition: transform 200ms linear;
+}
+
+:local(.slide) {
+  transform: translateX(0);
 }
 
 :local(.logo) {

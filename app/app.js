@@ -3,8 +3,8 @@ import React from 'react';
 import SideBar from './views/SideBar/SideBar';
 import Page from './views/Page/Page';
 
-class App extends React.Component {
-  render () {
+var App = React.createClass({
+  render: function () {
     return (
       <div>
         <SideBar />
@@ -12,6 +12,6 @@ class App extends React.Component {
       </div>
     )
   }
-}
+});
 
 React.render(<App />, document.body);

@@ -2,4 +2,9 @@
   position: relative;
   background-color: #fff;
   min-height: 100vh;
+  transition: transform 200ms linear;
+}
+
+:local(.slide) {
+  transform: translate(60vw);
 }

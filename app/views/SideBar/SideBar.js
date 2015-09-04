@@ -1,34 +1,31 @@
 import React from 'react/addons';
 import styles from './SideBar.scss';
 import RandomStore from '../../stores/random-store';
+import cx from 'classnames';
 
-var getPageState = () => { pageState: RandomStore.getPageState() };
+var getPageState = () => ({ pageState: RandomStore.getPageState() });
 
-class SideBar extends React.Component {
-  constructor () {
-    super();
-    this.state = getPageState();
-  }
+var SideBar = React.createClass({
+  getInitialState: function () {
+    return getPageState();
+  },
 
-  onSlide() {
+  onSlide: function () {
     this.setState(getPageState());
-  }
+  },
 
-  componentDidMount () {
+  componentDidMount: function () {
     RandomStore.addChangeListener(this.onSlide);
-  }
+  },
 
-  componentWillUnmount () {
+  componentWillUnmount: function () {
     RandomStore.removeChangeListener(this.onSlide);
-  }
+  },
 
-  render () {
-    var classSet = React.addons.classSet;
-    var pageStateClasses = {
-
-    };
+  render: function () {
+    var classList = this.state.pageState ? [styles.aside, styles.slide] : [styles.aside];
     return (
-      <aside className={styles.aside}>
+      <aside className={cx(classList)}>
         <img className={styles.logo} src={require('./elefe.png')} />
         <ul className={styles.ul}>
           <li><span className="fa fa-cog"></span>设置</li>
@@ -37,6 +34,6 @@ class SideBar extends React.Component {
       </aside>
     )
   }
-}
+});
 
 export default SideBar;
