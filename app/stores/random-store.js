@@ -2,7 +2,7 @@ import AppDispatcher from '../dispatcher/app-dispatcher';
 
 var EventEmitter = require('events').EventEmitter;
 var pageState = false;
-var teamList = [];
+var teamList = JSON.parse(localStorage.getItem('teamList'));
 
 function myAssign(target, ...sources) {
   sources.forEach(source => {

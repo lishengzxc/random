@@ -27,9 +27,8 @@ var AddTeamList = React.createClass({
       male: this.refs.maleValue.getDOMNode().value.split('，'),
       female: this.refs.femaleValue.getDOMNode().value.split('，')
     };
-    addTeamActionCreators.emitAddTeam({
-      content: content
-    });
+    console.log(JSON.stringify(content));
+    addTeamActionCreators.emitAddTeam(content);
   },
 
   render: function () {
