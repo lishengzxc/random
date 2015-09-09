@@ -17,6 +17,11 @@ var TeamListItem = React.createClass({
           <div className={cx(styles.member)}>胜</div>
           <div className={cx(styles.member)}>胜</div>
           <div className={cx(styles.member)}>胜</div>
+          <div className={cx(styles.member)}>胜</div>
+          <div className={cx(styles.member)}>胜</div>
+          <div className={cx(styles.member)}>胜</div>
+          <div className={cx(styles.member)}>胜</div>
+          <div className={cx(styles.member)}>胜</div>
         </div>
       </li>
     );

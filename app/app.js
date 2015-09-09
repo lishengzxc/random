@@ -42,7 +42,7 @@ var App = React.createClass({
           <div className={cx(styles.wrapper)}>
             <RouteHandler />
           </div>
-          <AddTeamButton />
+          <AddTeamButton visibility={window.location.hash.substr(1) === '/addTeam'}/>
         </div>
       </div>
     )

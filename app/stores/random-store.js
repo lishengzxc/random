@@ -1,8 +1,8 @@
 import AppDispatcher from '../dispatcher/app-dispatcher';
 
 var EventEmitter = require('events').EventEmitter;
-
 var pageState = false;
+var teamList = [];
 
 function myAssign(target, ...sources) {
   sources.forEach(source => {
@@ -36,6 +36,11 @@ AppDispatcher.register(function (action) {
   switch (action.actionType) {
     case 'EMIT_SLIDE':
       pageState = !pageState;
+      RandomStore.emitChange();
+      break;
+
+    case 'EMIT_ADDTEAM':
+      teamList.push(action.content);
       RandomStore.emitChange();
       break;
   }
