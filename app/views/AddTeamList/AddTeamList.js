@@ -1,12 +1,35 @@
 import styles from './AddTeamList.scss';
 import React from 'react';
 import cx from 'classnames';
+import addTeamActionCreators from '../../actions/addTeam-action-creators';
+
+// test
+//import RandomStore from '../../stores/random-store';
+//var g = () => ({ s: RandomStore.getTeamList() });
 
 var AddTeamList = React.createClass({
+
+  //onChange: function () {
+  //  console.log(g());
+  //},
+  //
+  //componentDidMount: function() {
+  //  RandomStore.addChangeListener(this.onChange);
+  //},
+  //
+  //componentWillUnmount: function() {
+  //  RandomStore.removeChangeListener(this.onChange);
+  //},
+
   addTeamList: function (event) {
     event.preventDefault();
-    console.log(this.refs.maleValue.getDOMNode().value);
-    console.log(this.refs.femaleValue.getDOMNode().value);
+    var content = {
+      male: this.refs.maleValue.getDOMNode().value.split('，'),
+      female: this.refs.femaleValue.getDOMNode().value.split('，')
+    };
+    addTeamActionCreators.emitAddTeam({
+      content: content
+    });
   },
 
   render: function () {

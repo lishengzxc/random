@@ -29,6 +29,10 @@ var RandomStore = myAssign({}, EventEmitter.prototype, {
 
   getPageState: function () {
     return pageState;
+  },
+
+  getTeamList: function () {
+    return teamList;
   }
 });
 
