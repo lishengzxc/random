@@ -5,7 +5,6 @@ import TeamList from '../TeamList/TeamList';
 import RandomStore from '../../stores/random-store';
 import cx from 'classnames';
 
-
 var getPageState = () => ({ pageState: RandomStore.getPageState() });
 
 
