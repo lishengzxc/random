@@ -36,7 +36,7 @@ var App = React.createClass({
   render: function () {
     var classList = this.state.pageState ? [styles.page, styles.slide] : [styles.page];
     return (
-      <div>
+      <div className={styles.div}>
         <SideBar />
         <Header />
         <div className={cx(classList)}>

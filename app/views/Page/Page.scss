@@ -15,3 +15,7 @@
   padding: 10px;
   background-color: #fff;
 }
+
+:local(.div) {
+  overflow-x: hidden;
+}
