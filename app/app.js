@@ -6,6 +6,7 @@ import Header from './views/Header/Header';
 import TeamList from './views/TeamList/TeamList';
 import RandomStore from './stores/random-store';
 import AddTeamButton from './views/AddTeamButton/AddTeamButton';
+import AddTeamList from './views/AddTeamList/AddTeamList';
 import cx from 'classnames';
 import Router from 'react-router';
 
@@ -51,6 +52,7 @@ var App = React.createClass({
 var routes = (
   <Route handler={App}>
     <Route path="/" handler={TeamList} />
+    <Route path="addTeam" handler={AddTeamList} />
   </Route>
 );
 
