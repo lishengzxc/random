@@ -8,3 +8,9 @@
 :local(.slide) {
   transform: translate(60vw);
 }
+
+:local(.wrapper) {
+  position: relative;
+  top: 40px;
+  padding: 10px;
+}

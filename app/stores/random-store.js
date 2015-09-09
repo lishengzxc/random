@@ -4,7 +4,17 @@ var EventEmitter = require('events').EventEmitter;
 
 var pageState = false;
 
-var RandomStore = Object.assign({}, EventEmitter.prototype, {
+function myAssign(target, ...sources) {
+  sources.forEach(source => {
+    Object.defineProperties(target, Object.keys(source).reduce((descriptors, key) => {
+      descriptors[key] = Object.getOwnPropertyDescriptor(source, key);
+      return descriptors;
+    }, {}));
+  });
+  return target;
+}
+
+var RandomStore = myAssign({}, EventEmitter.prototype, {
   emitChange: function () {
     this.emit('change');
   },

@@ -10,7 +10,7 @@ var Header = React.createClass({
   render: function () {
     return (
       <header className={styles.header}>
-        <span className="fa fa-bars" onClick={this.slide}></span>
+        <span className="fa fa-bars" onTouchStart={this.slide}></span>
         <h1 className={styles.title}></h1>
       </header>
     )

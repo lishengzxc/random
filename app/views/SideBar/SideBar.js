@@ -28,7 +28,6 @@ var SideBar = React.createClass({
       <aside className={cx(classList)}>
         <img className={styles.logo} src={require('./elefe.png')} />
         <ul className={styles.ul}>
-          <li><span className="fa fa-cog"></span>设置</li>
           <li><span className="fa fa-exclamation-circle"></span>关于</li>
         </ul>
       </aside>

@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from './Page.scss';
 import Header from '../Header/Header';
+import TeamList from '../TeamList/TeamList';
 import RandomStore from '../../stores/random-store';
 import cx from 'classnames';
 
+
 var getPageState = () => ({ pageState: RandomStore.getPageState() });
+
 
 var Page = React.createClass({
   getInitialState: function () {
@@ -25,12 +28,17 @@ var Page = React.createClass({
 
   render: function () {
     var classList = this.state.pageState ? [styles.page, styles.slide] : [styles.page];
+
     return (
       <div className={cx(classList)}>
         <Header />
+        <div className={cx(styles.wrapper)}>
+
+        </div>
       </div>
     )
   }
 });
+
 
 export default Page;
