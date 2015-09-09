@@ -2,6 +2,7 @@ import React from 'react/addons';
 import styles from './SideBar.scss';
 import RandomStore from '../../stores/random-store';
 import cx from 'classnames';
+import slideActionCreators from '../../actions/slide-action-creators';
 
 var getPageState = () => ({ pageState: RandomStore.getPageState() });
 
@@ -12,6 +13,10 @@ var SideBar = React.createClass({
 
   onSlide: function () {
     this.setState(getPageState());
+  },
+
+  slide: function () {
+    slideActionCreators.emitSlide();
   },
 
   componentDidMount: function () {
@@ -28,6 +33,8 @@ var SideBar = React.createClass({
       <aside className={cx(classList)}>
         <img className={styles.logo} src={require('./elefe.png')} />
         <ul className={styles.ul}>
+          <li><a onClick={this.slide} className={styles.link} href="#/"><span className="fa fa-exclamation-circle"></span>首页</a></li>
+          <li><a onClick={this.slide} className={styles.link} href="#/setup"><span className="fa fa-exclamation-circle"></span>设置</a></li>
           <li><span className="fa fa-exclamation-circle"></span>关于</li>
         </ul>
       </aside>

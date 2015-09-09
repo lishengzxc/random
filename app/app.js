@@ -4,11 +4,12 @@ import React from 'react';
 import SideBar from './views/SideBar/SideBar';
 import Header from './views/Header/Header';
 import TeamList from './views/TeamList/TeamList';
-import RandomStore from './stores/random-store';
 import AddTeamButton from './views/AddTeamButton/AddTeamButton';
 import AddTeamList from './views/AddTeamList/AddTeamList';
+import Setup from './views/Setup/Setup';
 import cx from 'classnames';
 import Router from 'react-router';
+import RandomStore from './stores/random-store';
 
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
@@ -43,7 +44,7 @@ var App = React.createClass({
             <RouteHandler />
           </div>
         </div>
-        <AddTeamButton visibility={window.location.hash.substr(1) === '/addTeam' || this.state.pageState}/>
+        <AddTeamButton visibility={window.location.hash.substr(1) === '/addTeam' || window.location.hash.substr(1) === '/setup'}/>
       </div>
     )
   }
@@ -53,6 +54,7 @@ var routes = (
   <Route handler={App}>
     <Route path="/" handler={TeamList} />
     <Route path="addTeam" handler={AddTeamList} />
+    <Route path="setup" handler={Setup} />
   </Route>
 );
 

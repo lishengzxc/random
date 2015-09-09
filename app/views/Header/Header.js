@@ -2,19 +2,29 @@ import React from 'react';
 import styles from './Header.scss';
 import slideActionCreators from '../../actions/slide-action-creators';
 import cx from 'classnames';
+import RandomStore from '../../stores/random-store';
+
+var getPageState = () => ({ pageState: RandomStore.getPageState() });
 
 var Header = React.createClass({
   getInitialState: function () {
-    return {
-      pageState: false
-    };
+    return getPageState();
   },
 
   slide: function () {
     slideActionCreators.emitSlide();
-    this.setState({
-      pageState: !this.state.pageState
-    });
+  },
+
+  onSlide: function () {
+    this.setState(getPageState());
+  },
+
+  componentDidMount: function () {
+    RandomStore.addChangeListener(this.onSlide);
+  },
+
+  componentWillUnmount: function () {
+    RandomStore.removeChangeListener(this.onSlide);
   },
 
   render: function () {
