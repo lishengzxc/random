@@ -1,0 +1,15 @@
+:local(.addTeamButton) {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  background-color: #F95353;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}

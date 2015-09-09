@@ -5,6 +5,7 @@ import SideBar from './views/SideBar/SideBar';
 import Header from './views/Header/Header';
 import TeamList from './views/TeamList/TeamList';
 import RandomStore from './stores/random-store';
+import AddTeamButton from './views/AddTeamButton/AddTeamButton';
 import cx from 'classnames';
 import Router from 'react-router';
 
@@ -35,11 +36,12 @@ var App = React.createClass({
     return (
       <div>
         <SideBar />
+        <Header />
         <div className={cx(classList)}>
-          <Header />
           <div className={cx(styles.wrapper)}>
             <RouteHandler />
           </div>
+          <AddTeamButton />
         </div>
       </div>
     )
@@ -48,7 +50,7 @@ var App = React.createClass({
 
 var routes = (
   <Route handler={App}>
-    <Route path="teamlist" handler={TeamList} />
+    <Route path="/" handler={TeamList} />
   </Route>
 );
 

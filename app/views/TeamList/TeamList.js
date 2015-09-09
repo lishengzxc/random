@@ -8,6 +8,16 @@ var TeamList = React.createClass({
       <ul>
         <TeamListItem />
         <TeamListItem />
+        <TeamListItem />
+        <TeamListItem />
+        <TeamListItem />
+        <TeamListItem />
+        <TeamListItem />
+        <TeamListItem />
+        <TeamListItem />
+        <TeamListItem />
+        <TeamListItem />
+        <TeamListItem />
       </ul>
     );
   }
