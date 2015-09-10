@@ -2,6 +2,7 @@ import AppDispatcher from '../dispatcher/app-dispatcher';
 
 var EventEmitter = require('events').EventEmitter;
 var pageState = false;
+var nowTeam;
 var teamList = JSON.parse(localStorage.getItem('teamList') || '[]');
 
 function myAssign(target, ...sources) {
@@ -33,6 +34,10 @@ var RandomStore = myAssign({}, EventEmitter.prototype, {
 
   getTeamList: function () {
     return teamList;
+  },
+
+  getNowTeam: function () {
+    return nowTeam;
   }
 });
 
@@ -55,8 +60,12 @@ AppDispatcher.register(function (action) {
       localStorage.setItem('teamList', '[]');
       RandomStore.emitChange();
       break;
+
+    case 'EMIT_CHOOSETEAM':
+      nowTeam = teamList[action.content];
+      RandomStore.emitChange();
+      break;
   }
 });
 
-module.exports = RandomStore;
-
+export default RandomStore;

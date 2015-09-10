@@ -50,7 +50,9 @@ var App = React.createClass({
           window.location.hash.substr(1) === '/addTeam' ||
           window.location.hash.substr(1) === '/setup' ||
           window.location.hash.substr(1) === '/randomPage'} />
-        <EditTeamButton />
+        <EditTeamButton visibility={
+          window.location.hash.substr(1) === '/randomPage'} />
+          }/>
       </div>
     )
   }

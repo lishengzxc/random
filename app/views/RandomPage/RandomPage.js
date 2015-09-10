@@ -1,8 +1,15 @@
 import styles from './RandomPage.scss';
 import React from 'react';
 import cx from 'classnames';
+import RandomStore from '../../stores/random-store';
+
+var getNowTeam = () => ({ nowTeam: RandomStore.getNowTeam() });
 
 var RandomPage = React.createClass({
+  getInitialState: function () {
+    return getNowTeam();
+  },
+
   componentDidMount: function () {
     this.refs.numberinput.getDOMNode().focus();
   },
@@ -16,6 +23,7 @@ var RandomPage = React.createClass({
             <input type="checkbox" id="same" /><label htmlFor="same"></label>
           </div>
         </div>
+      {JSON.stringify(this.state.nowTeam)}
       </div>
     );
   }

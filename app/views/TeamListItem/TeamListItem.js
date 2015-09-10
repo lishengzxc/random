@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './TeamListItem.scss';
 import cx from 'classnames';
+import chooseTeamActionCreators from '../../actions/chooseTeam-action-creators';
 
 var TeamListItem = React.createClass({
   chooseChoice: function () {
+    chooseTeamActionCreators.emitChooseTeam(this.props.id);
     window.location.href = '#/randomPage';
   },
 
