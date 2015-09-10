@@ -5,9 +5,10 @@ import SideBar from './views/SideBar/SideBar';
 import Header from './views/Header/Header';
 import TeamList from './views/TeamList/TeamList';
 import AddTeamButton from './views/AddTeamButton/AddTeamButton';
+import EditTeamButton from './views/EditTeamButton/EditTeamButton';
 import AddTeamList from './views/AddTeamList/AddTeamList';
 import Setup from './views/Setup/Setup';
-//import RandomPage from './views/RandomPage/RandomPage';
+import RandomPage from './views/RandomPage/RandomPage';
 import cx from 'classnames';
 import Router from 'react-router';
 import RandomStore from './stores/random-store';
@@ -45,7 +46,11 @@ var App = React.createClass({
             <RouteHandler />
           </div>
         </div>
-        <AddTeamButton visibility={window.location.hash.substr(1) === '/addTeam' || window.location.hash.substr(1) === '/setup'}/>
+        <AddTeamButton visibility={
+          window.location.hash.substr(1) === '/addTeam' ||
+          window.location.hash.substr(1) === '/setup' ||
+          window.location.hash.substr(1) === '/randomPage'} />
+        <EditTeamButton />
       </div>
     )
   }
@@ -56,6 +61,7 @@ var routes = (
     <Route path="/" handler={TeamList} />
     <Route path="addTeam" handler={AddTeamList} />
     <Route path="setup" handler={Setup} />
+    <Route path="randomPage" handler={RandomPage} />
   </Route>
 );
 

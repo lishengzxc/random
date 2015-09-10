@@ -15,8 +15,7 @@ var TeamList = React.createClass({
     return (
       <ul>{
         teamList.map(function (result) {
-          console.log(result);
-          return <TeamListItem key={result.id} members={result.male.concat(result.female)} />
+          return <TeamListItem key={result.id} male={result.male} female={result.female} />
         })
         }</ul>
     );

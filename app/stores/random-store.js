@@ -2,7 +2,7 @@ import AppDispatcher from '../dispatcher/app-dispatcher';
 
 var EventEmitter = require('events').EventEmitter;
 var pageState = false;
-var teamList = JSON.parse(localStorage.getItem('teamList'));
+var teamList = JSON.parse(localStorage.getItem('teamList') || '[]');
 
 function myAssign(target, ...sources) {
   sources.forEach(source => {
@@ -46,6 +46,13 @@ AppDispatcher.register(function (action) {
     case 'EMIT_ADDTEAM':
       action.content.id = teamList.length;
       teamList.push(action.content);
+      localStorage.setItem('teamList', JSON.stringify(teamList));
+      RandomStore.emitChange();
+      break;
+
+    case 'EMIT_CLEARTEAM':
+      teamList = [];
+      localStorage.setItem('teamList', '[]');
       RandomStore.emitChange();
       break;
   }

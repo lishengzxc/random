@@ -1,10 +1,10 @@
 import styles from './Setup.scss';
 import React from 'react';
+import clearTeamActionCreators from '../../actions/clearTeam-action-creators';
 
 var Setup = React.createClass({
   clear: function () {
-    // test
-    localStorage.setItem('teamList', '[{"male":["胜","李"],"female":["鱼","乐","林"]}]');
+    clearTeamActionCreators.emitClearTeam();
   },
 
   render: function () {
