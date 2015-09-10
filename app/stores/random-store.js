@@ -44,6 +44,7 @@ AppDispatcher.register(function (action) {
       break;
 
     case 'EMIT_ADDTEAM':
+      action.content.id = teamList.length;
       teamList.push(action.content);
       RandomStore.emitChange();
       break;

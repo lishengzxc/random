@@ -3,32 +3,22 @@ import React from 'react';
 import cx from 'classnames';
 import addTeamActionCreators from '../../actions/addTeam-action-creators';
 
-// test
-//import RandomStore from '../../stores/random-store';
-//var g = () => ({ s: RandomStore.getTeamList() });
-
 var AddTeamList = React.createClass({
-
-  //onChange: function () {
-  //  console.log(g());
-  //},
-  //
-  //componentDidMount: function() {
-  //  RandomStore.addChangeListener(this.onChange);
-  //},
-  //
-  //componentWillUnmount: function() {
-  //  RandomStore.removeChangeListener(this.onChange);
-  //},
-
   addTeamList: function (event) {
     event.preventDefault();
+    var male = this.refs.maleValue.getDOMNode().value;
+    var female = this.refs.femaleValue.getDOMNode().value;
+
+    if (!male || !female) return;
+
     var content = {
-      male: this.refs.maleValue.getDOMNode().value.split('，'),
-      female: this.refs.femaleValue.getDOMNode().value.split('，')
+      male: male.split('，'),
+      female: female.split('，')
     };
-    console.log(JSON.stringify(content));
-    addTeamActionCreators.emitAddTeam(content);
+    if (confirm('确认提交')) {
+      addTeamActionCreators.emitAddTeam(content);
+      window.location.href = '#/';
+    }
   },
 
   render: function () {

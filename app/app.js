@@ -7,6 +7,7 @@ import TeamList from './views/TeamList/TeamList';
 import AddTeamButton from './views/AddTeamButton/AddTeamButton';
 import AddTeamList from './views/AddTeamList/AddTeamList';
 import Setup from './views/Setup/Setup';
+//import RandomPage from './views/RandomPage/RandomPage';
 import cx from 'classnames';
 import Router from 'react-router';
 import RandomStore from './stores/random-store';
@@ -59,5 +60,5 @@ var routes = (
 );
 
 Router.run(routes, Router.HashLocation, (Root) => {
-  React.render(<Root/>, document.body);
+  React.render(<Root />, document.body);
 });

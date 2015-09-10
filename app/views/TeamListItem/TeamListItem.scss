@@ -24,13 +24,14 @@
 
 :local(.tip) {
   position: absolute;
-  top: 0;
-  left: -25px;
+  left: -30px;
   width: 80px;
-  height: 30px;
-  font-size: 16px;
+  height: 20px;
+  font-size: 12px;
   text-align: center;
-  line-height: 30px;
+  line-height: 20px;
   transform: rotate(-45deg);
+  background-color: #F95353;
+  color: #fff;
 }
 
