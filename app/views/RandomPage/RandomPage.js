@@ -11,7 +11,7 @@ var RandomPage = React.createClass({
   getInitialState: function () {
     return {
       nowTeam: getNowTeam(),
-      isSameSex: false,
+      isSameSex: true,
       num: '',
       randomList: []
     }
@@ -31,9 +31,7 @@ var RandomPage = React.createClass({
   },
 
   getIsSameSex: function (event) {
-    this.setState({
-      isSameSex: event.target.checked
-    });
+    this.state.isSameSex = event.target.checked;
     this.random();
   },
 
@@ -41,7 +39,7 @@ var RandomPage = React.createClass({
     var team = JSON.parse(JSON.stringify(this.state.nowTeam));
     delete team.id;
     this.setState({
-      randomList: Random.divide(false, Random.sort(team), this.state.num) || []
+      randomList: Random.divide(this.state.isSameSex, Random.sort(team), this.state.num) || []
     });
   },
 
