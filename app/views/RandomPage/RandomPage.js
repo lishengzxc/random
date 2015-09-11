@@ -3,7 +3,7 @@ import React from 'react';
 import cx from 'classnames';
 import RandomStore from '../../stores/random-store';
 
-var getNowTeam = () => ({ nowTeam: RandomStore.getNowTeam() });
+var getNowTeam = () => ({ nowTeam: RandomStore.getNowTeam().team });
 
 var RandomPage = React.createClass({
   getInitialState: function () {

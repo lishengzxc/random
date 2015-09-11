@@ -49,7 +49,8 @@ var App = React.createClass({
         <AddTeamButton visibility={
           window.location.hash.substr(1) === '/addTeam' ||
           window.location.hash.substr(1) === '/setup' ||
-          window.location.hash.substr(1) === '/randomPage'} />
+          window.location.hash.substr(1) === '/randomPage' ||
+          window.location.hash.substr(1) === '/editTeam'} />
         <EditTeamButton visibility={
           window.location.hash.substr(1) === '/randomPage'} />
           }/>
@@ -64,6 +65,7 @@ var routes = (
     <Route path="addTeam" handler={AddTeamList} />
     <Route path="setup" handler={Setup} />
     <Route path="randomPage" handler={RandomPage} />
+    <Route path="editTeam" handler={AddTeamList} />
   </Route>
 );
 
