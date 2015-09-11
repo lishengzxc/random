@@ -3,10 +3,6 @@ import AppDispatcher from '../dispatcher/app-dispatcher';
 var EventEmitter = require('events').EventEmitter;
 var pageState = false;
 var now = {};
-// test
-//var now = {
-//  team: {"male":["1","2","3","4","5"],"female":["6","7","8","9","0"]}
-//};
 var teamList = JSON.parse(localStorage.getItem('teamList') || '[]');
 
 function myAssign(target, ...sources) {
@@ -77,6 +73,11 @@ AppDispatcher.register(function (action) {
       action.content.id = now.index;
       teamList[now.index] = action.content;
       localStorage.setItem('teamList', JSON.stringify(teamList));
+      RandomStore.emitChange();
+      break;
+
+    case 'EMIT_CLOSESB':
+      pageState = false;
       RandomStore.emitChange();
       break;
   }
