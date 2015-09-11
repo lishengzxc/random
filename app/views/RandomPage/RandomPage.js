@@ -3,6 +3,7 @@ import React from 'react';
 import Random from '../../util/util';
 import cx from 'classnames';
 import RandomStore from '../../stores/random-store';
+import GroupItem from '../GroupItem/GroupItem';
 
 var getNowTeam = () => RandomStore.getNowTeam().team;
 
@@ -16,15 +17,16 @@ var RandomPage = React.createClass({
     }
   },
 
+  componentWillMount: function () {
+    if (!this.state.nowTeam) window.location.href = '#/';
+  },
+
   componentDidMount: function () {
     this.refs.numberinput.getDOMNode().focus();
   },
 
   getNum: function (event) {
-    //this.setState({
-    //  num: event.target.value
-    //});
-    this.state.num = event.target.value
+    this.state.num = event.target.value;
     this.random();
   },
 
@@ -36,8 +38,10 @@ var RandomPage = React.createClass({
   },
 
   random: function () {
+    var team = JSON.parse(JSON.stringify(this.state.nowTeam));
+    delete team.id;
     this.setState({
-      randomList: Random.divide(false, Random.sort(this.state.nowTeam), this.state.num) || []
+      randomList: Random.divide(false, Random.sort(team), this.state.num) || []
     });
   },
 
@@ -50,7 +54,9 @@ var RandomPage = React.createClass({
             <input type="checkbox" id="same" checked={this.state.isSameSex} onChange={this.getIsSameSex} /><label htmlFor="same"></label>
           </div>
         </form>
-        <ul>{this.state.randomList.length}</ul>
+        <ul>{this.state.randomList.map(function (result) {
+          return <GroupItem result={result} />
+        })}</ul>
       </div>
     );
   }
