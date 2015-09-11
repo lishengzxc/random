@@ -4,7 +4,11 @@ import clearTeamActionCreators from '../../actions/clearTeam-action-creators';
 
 var Setup = React.createClass({
   clear: function () {
-    clearTeamActionCreators.emitClearTeam();
+    if (confirm('确认要清空所有数据ಥ_ಥ')) {
+      clearTeamActionCreators.emitClearTeam();
+      alert('数据已清空>ㅂ<');
+      window.location.href = '#/';
+    }
   },
 
   render: function () {

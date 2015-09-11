@@ -33,9 +33,9 @@ var SideBar = React.createClass({
       <aside className={cx(classList)}>
         <img className={styles.logo} src={require('./elefe.png')} />
         <ul className={styles.ul}>
-          <li><a onClick={this.slide} className={styles.link} href="#/"><span className="fa fa-exclamation-circle"></span>首页</a></li>
-          <li><a onClick={this.slide} className={styles.link} href="#/setup"><span className="fa fa-exclamation-circle"></span>设置</a></li>
-          <li><span className="fa fa-exclamation-circle"></span>关于</li>
+          <li><a onClick={this.slide} className={styles.link} href="#/"><span className="fa fa-users"></span>首页</a></li>
+          <li><a onClick={this.slide} className={styles.link} href="#/setup"><span className="fa fa-cogs"></span>设置</a></li>
+          <li><span className="fa fa-comments"></span>关于</li>
         </ul>
       </aside>
     )

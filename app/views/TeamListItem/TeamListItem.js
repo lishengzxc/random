@@ -2,10 +2,12 @@ import React from 'react';
 import styles from './TeamListItem.scss';
 import cx from 'classnames';
 import chooseTeamActionCreators from '../../actions/chooseTeam-action-creators';
+import closesb from '../../actions/closesb-action-creators.js';
 
 var TeamListItem = React.createClass({
   chooseChoice: function () {
     chooseTeamActionCreators.emitChooseTeam(this.props.id);
+    closesb.emitClose();
     window.location.href = '#/randomPage';
   },
 
