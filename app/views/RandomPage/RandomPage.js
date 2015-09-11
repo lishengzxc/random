@@ -4,11 +4,16 @@ import Random from '../../util/util';
 import cx from 'classnames';
 import RandomStore from '../../stores/random-store';
 
-var getNowTeam = () => ({ nowTeam: RandomStore.getNowTeam().team });
+var getNowTeam = () => RandomStore.getNowTeam().team;
 
 var RandomPage = React.createClass({
   getInitialState: function () {
-    return getNowTeam();
+    return {
+      nowTeam: getNowTeam(),
+      isSameSex: false,
+      num: '',
+      randomList: []
+    }
   },
 
   componentDidMount: function () {
@@ -16,20 +21,36 @@ var RandomPage = React.createClass({
   },
 
   getNum: function (event) {
-    this.state.value = event.target.value;
+    //this.setState({
+    //  num: event.target.value
+    //});
+    this.state.num = event.target.value
+    this.random();
+  },
+
+  getIsSameSex: function (event) {
+    this.setState({
+      isSameSex: event.target.checked
+    });
+    this.random();
+  },
+
+  random: function () {
+    this.setState({
+      randomList: Random.divide(false, Random.sort(this.state.nowTeam), this.state.num) || []
+    });
   },
 
   render: function () {
-    var value = this.state.value;
     return (
       <div>
-        <div className={styles.inputbox}>
-          <input type="number" className={styles.numberinput} ref="numberinput" onChange={this.getNum} value={value}/>
+        <form className={styles.inputbox}>
+          <input type="number" className={styles.numberinput} ref="numberinput" onChange={this.getNum} defaultValue={this.state.num} />
           <div className={styles.checksame}>
-            <input type="checkbox" id="same" /><label htmlFor="same"></label>
+            <input type="checkbox" id="same" checked={this.state.isSameSex} onChange={this.getIsSameSex} /><label htmlFor="same"></label>
           </div>
-        </div>
-      {JSON.stringify(this.state.nowTeam)}
+        </form>
+        <ul>{this.state.randomList.length}</ul>
       </div>
     );
   }
