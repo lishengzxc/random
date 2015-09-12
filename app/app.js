@@ -55,7 +55,6 @@ var App = React.createClass({
         <EditTeamButton visibility={
           window.location.hash.substr(1) === '/randomPage'}
         />
-      }/>
       </div>
     )
   }
