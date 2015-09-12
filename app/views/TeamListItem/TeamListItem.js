@@ -14,7 +14,7 @@ var TeamListItem = React.createClass({
   render: function () {
     var members = this.props.male.concat(this.props.female);
     return (
-      <li className={styles.item} onTouchStart={this.chooseChoice}>
+      <li className={styles.item} onClick={this.chooseChoice}>
         <div className={styles.content}>{
           members.map(function (result) {
             return <div key={result} className={cx(styles.member)}>{result}</div>

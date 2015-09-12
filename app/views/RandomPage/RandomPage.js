@@ -47,13 +47,13 @@ var RandomPage = React.createClass({
     return (
       <div>
         <form className={styles.inputbox}>
-          <input type="number" className={styles.numberinput} ref="numberinput" onChange={this.getNum} defaultValue={this.state.num} />
+          <input type="number" className={styles.numberinput} ref="numberinput" onChange={this.getNum} value={this.state.num} />
           <div className={styles.checksame}>
             <input type="checkbox" id="same" checked={this.state.isSameSex} onChange={this.getIsSameSex} /><label htmlFor="same"></label>
           </div>
         </form>
         <ul>{this.state.randomList.map(function (result) {
-          return <GroupItem result={result} />
+          return <GroupItem result={result} key={result}/>
         })}</ul>
       </div>
     );
