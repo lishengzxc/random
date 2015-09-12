@@ -201,7 +201,7 @@
 
 
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box; }\n\nbody, ul, li {\n  margin: 0;\n  padding: 0; }\n\nhtml, body {\n  height: 100%; }\n\nbody {\n  font: 62.5% san-serif; }\n\nli {\n  list-style: none; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box; }\n\nbody, ul, li {\n  margin: 0;\n  padding: 0; }\n\nhtml, body {\n  height: 100%;\n  overflow: hidden; }\n\nbody {\n  font: 62.5% \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial, sans-serif; }\n\nli {\n  list-style: none; }\n", ""]);
 
 	// exports
 
@@ -522,7 +522,7 @@
 
 
 	// module
-	exports.push([module.id, "._1QOZ4JvHUdW-BGhU6n1Gs3 {\n  position: relative;\n  top: 40px;\n  min-height: calc(100vh - 40px);\n  background-color: #fff;\n  -webkit-transition: -webkit-transform 200ms linear;\n          transition: transform 200ms linear; }\n\n._1DSTsuU12TpbyGo8mRqKLQ {\n  -webkit-transform: translate(60vw);\n      -ms-transform: translate(60vw);\n          transform: translate(60vw); }\n\n._2yQ69TbsdlYcprUurzDR0W {\n  position: relative;\n  padding: 10px;\n  background-color: #fff; }\n\n._3cf_ZD19akdYNFqQncaBd_ {\n  overflow-x: hidden;\n  height: 100%; }\n", ""]);
+	exports.push([module.id, "._1QOZ4JvHUdW-BGhU6n1Gs3 {\n  position: relative;\n  height: 100%;\n  overflow: hidden;\n  background-color: #fff;\n  -webkit-transition: -webkit-transform 200ms linear;\n          transition: transform 200ms linear; }\n\n._1DSTsuU12TpbyGo8mRqKLQ {\n  -webkit-transform: translate(60vw);\n      -ms-transform: translate(60vw);\n          transform: translate(60vw); }\n\n._2yQ69TbsdlYcprUurzDR0W {\n  position: relative;\n  overflow: hidden;\n  padding: 40px 10px 10px 10px;\n  height: 100%;\n  background-color: #fff; }\n\n._3cf_ZD19akdYNFqQncaBd_ {\n  overflow: hidden;\n  height: 100%; }\n", ""]);
 
 	// exports
 	exports.locals = {
@@ -24156,7 +24156,7 @@
 	    var teamList = this.state.teamList;
 	    return _react2['default'].createElement(
 	      'ul',
-	      null,
+	      { className: _TeamListScss2['default'].ul },
 	      teamList.map(function (result) {
 	        return _react2['default'].createElement(_TeamListItemTeamListItem2['default'], { key: result.id, male: result.male, female: result.female, id: result.id });
 	      })
@@ -24202,10 +24202,12 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, "._3YBRi4m3OiRDbfzw8mnRuF {\n  overflow: scroll;\n  -webkit-overflow-scrolling: touch;\n  height: 100%; }\n", ""]);
 
 	// exports
-
+	exports.locals = {
+		"ul": "_3YBRi4m3OiRDbfzw8mnRuF"
+	};
 
 /***/ },
 /* 199 */
@@ -24306,7 +24308,7 @@
 
 
 	// module
-	exports.push([module.id, "._3bPcnkxdTwStRFrd8Dzlix {\n  position: relative;\n  margin: 10px 0;\n  height: 60px;\n  overflow-x: auto; }\n\n._2Cj6aS26YdIR8TLcvb18uS {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex; }\n\n._1TA5OHX_mcI3GlKQLNQxlx {\n  height: 60px;\n  width: 60px;\n  border-radius: 50%;\n  border: 1px solid #ccc;\n  -webkit-flex-shrink: 0;\n      -ms-flex-negative: 0;\n          flex-shrink: 0;\n  margin-right: 5px;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  font-size: 22px; }\n", ""]);
+	exports.push([module.id, "._3bPcnkxdTwStRFrd8Dzlix {\n  position: relative;\n  padding: 5px 0;\n  overflow-x: auto;\n  border-bottom: 1px solid #ccc; }\n\n._2Cj6aS26YdIR8TLcvb18uS {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  padding: 5px; }\n\n._1TA5OHX_mcI3GlKQLNQxlx {\n  height: 60px;\n  width: 60px;\n  border-radius: 50%;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);\n  -webkit-flex-shrink: 0;\n      -ms-flex-negative: 0;\n          flex-shrink: 0;\n  margin-right: 10px;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  font-size: 22px; }\n", ""]);
 
 	// exports
 	exports.locals = {
@@ -24851,7 +24853,7 @@
 
 
 	// module
-	exports.push([module.id, "._3ZbUD47nvO1B-7HWjCzOlh {\n  width: 100%;\n  height: 40px;\n  color: #fff;\n  font-size: 14px;\n  border: 1px solid #F95353;\n  background-color: #F95353;\n  border-radius: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }\n", ""]);
+	exports.push([module.id, "._3ZbUD47nvO1B-7HWjCzOlh {\n  width: 100%;\n  height: 40px;\n  margin-top: 10px;\n  color: #fff;\n  font-size: 14px;\n  border: 1px solid #F95353;\n  background-color: #F95353;\n  border-radius: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }\n", ""]);
 
 	// exports
 	exports.locals = {
@@ -24943,7 +24945,7 @@
 	  },
 
 	  componentDidMount: function componentDidMount() {
-	    this.refs.numberinput.getDOMNode().focus();
+	    //this.refs.numberinput.getDOMNode().focus();
 	  },
 
 	  getNum: function getNum(event) {
@@ -24967,7 +24969,7 @@
 	  render: function render() {
 	    return _react2['default'].createElement(
 	      'div',
-	      null,
+	      { className: _RandomPageScss2['default'].div },
 	      _react2['default'].createElement(
 	        'form',
 	        { className: _RandomPageScss2['default'].inputbox },
@@ -24981,7 +24983,7 @@
 	      ),
 	      _react2['default'].createElement(
 	        'ul',
-	        null,
+	        { className: _RandomPageScss2['default'].ul },
 	        this.state.randomList.map(function (result) {
 	          return _react2['default'].createElement(_GroupItemGroupItem2['default'], { result: result, key: result });
 	        })
@@ -25028,13 +25030,14 @@
 
 
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n._8MJkPXkFraRpACp5isnbK {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n._34F2g44JhnoKF_3skkH9xz {\n  width: 70%;\n  height: 40px;\n  border-radius: 6px;\n  padding: 0 10px;\n  border: 1px solid #ccc;\n  margin-right: 10px;\n  -webkit-appearance: none; }\n\n._2drP9NgvTonAVBj66IeZ44 {\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1; }\n  ._2drP9NgvTonAVBj66IeZ44 input {\n    position: absolute;\n    opacity: 0; }\n    ._2drP9NgvTonAVBj66IeZ44 input:checked ~ label::after {\n      content: '\\5206\\6027\\522B'; }\n  ._2drP9NgvTonAVBj66IeZ44 label {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 40px;\n    border: 1px solid #ccc;\n    border-radius: 6px;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    ._2drP9NgvTonAVBj66IeZ44 label::after {\n      content: '\\4E0D\\5206\\6027\\522B'; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n._8MJkPXkFraRpACp5isnbK {\n  position: relative;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-top: 10px;\n  height: 50px;\n  padding-bottom: 10px;\n  border-bottom: 1px solid #ccc;\n  background-color: #fff;\n  z-index: 1; }\n\n._34F2g44JhnoKF_3skkH9xz {\n  width: 70%;\n  height: 40px;\n  border-radius: 6px;\n  padding: 0 10px;\n  border: 1px solid #ccc;\n  margin-right: 10px;\n  -webkit-appearance: none;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }\n\n._2drP9NgvTonAVBj66IeZ44 {\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1; }\n  ._2drP9NgvTonAVBj66IeZ44 input {\n    position: absolute;\n    opacity: 0; }\n    ._2drP9NgvTonAVBj66IeZ44 input:checked ~ label::after {\n      content: '\\5206\\6027\\522B'; }\n  ._2drP9NgvTonAVBj66IeZ44 label {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 40px;\n    font-size: 13px;\n    border: 1px solid #ccc;\n    border-radius: 6px;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }\n    ._2drP9NgvTonAVBj66IeZ44 label::after {\n      content: '\\4E0D\\5206\\6027\\522B'; }\n\n._1sL6SlKvpRoH3vl_j7n2u {\n  top: 100px;\n  left: 10px;\n  right: 10px;\n  bottom: 10px;\n  position: absolute;\n  overflow: scroll;\n  -webkit-overflow-scrolling: touch; }\n", ""]);
 
 	// exports
 	exports.locals = {
 		"inputbox": "_8MJkPXkFraRpACp5isnbK",
 		"numberinput": "_34F2g44JhnoKF_3skkH9xz",
-		"checksame": "_2drP9NgvTonAVBj66IeZ44"
+		"checksame": "_2drP9NgvTonAVBj66IeZ44",
+		"ul": "_1sL6SlKvpRoH3vl_j7n2u"
 	};
 
 /***/ },
@@ -25158,7 +25161,7 @@
 
 
 	// module
-	exports.push([module.id, ".qRXVryYUoB4z1Rp3j6hvb {\n  float: left;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  font-size: 16px;\n  height: 40px;\n  width: 40px;\n  border: 1px solid #ccc;\n  margin: 5px 5px 5px 0; }\n\n._2RPmjgbSosRt4qMS0vf-cj {\n  overflow: hidden;\n  margin-top: 10px;\n  padding: 0 5px;\n  border: 1px solid #ccc;\n  border-radius: 6px; }\n", ""]);
+	exports.push([module.id, ".qRXVryYUoB4z1Rp3j6hvb {\n  float: left;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  font-size: 16px;\n  height: 45px;\n  width: 45px;\n  margin: 10px 10px 10px 0;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }\n\n._2RPmjgbSosRt4qMS0vf-cj {\n  overflow: hidden;\n  margin-top: 10px;\n  padding: 0 10px;\n  border: 1px solid #ccc;\n  border-radius: 6px; }\n", ""]);
 
 	// exports
 	exports.locals = {
