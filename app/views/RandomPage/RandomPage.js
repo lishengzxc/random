@@ -22,7 +22,7 @@ var RandomPage = React.createClass({
   },
 
   componentDidMount: function () {
-    //this.refs.numberinput.getDOMNode().focus();
+    this.refs.numberinput.getDOMNode().focus();
   },
 
   getNum: function (event) {
@@ -53,7 +53,7 @@ var RandomPage = React.createClass({
           </div>
         </form>
         <ul>{this.state.randomList.map(function (result) {
-          return <GroupItem result={result} />
+          return <GroupItem result={result} key={result}/>
         })}</ul>
       </div>
     );

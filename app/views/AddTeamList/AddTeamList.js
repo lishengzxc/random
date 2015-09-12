@@ -45,11 +45,11 @@ var AddTeamList = React.createClass({
       <form onSubmit={this.addTeamList}>
         <div className={cx(styles.group)}>
           <div className={cx(styles.babel, styles.male)}>男生</div>
-          <textarea className={styles.textarea} placeholder="某 某 某" ref='maleValue' defaultValue={maleStr}></textarea>
+          <textarea className={styles.textarea} placeholder="某 某 某" ref='maleValue' defaultValue={maleStr} />
         </div>
         <div>
           <div className={cx(styles.babel, styles.female)}>女生</div>
-          <textarea className={styles.textarea} placeholder="某 某 某" ref='femaleValue' defaultValue={femaleStr}></textarea>
+          <textarea className={styles.textarea} placeholder="某 某 某" ref='femaleValue' defaultValue={femaleStr} />
         </div>
         <button className={styles.button}><i className="fa fa-check"></i></button>
       </form>

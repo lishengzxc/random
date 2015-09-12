@@ -10,7 +10,7 @@ var RandomUtil = {
   },
 
   divide: function (flag, array, n) {
-    if (!n) return;
+    if (!n || n <= 0) return;
     var ret = [];
     if (flag) {
       while (array.male.length) {

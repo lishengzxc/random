@@ -32,7 +32,7 @@ var Header = React.createClass({
 
     return (
       <header className={cx(classList)}>
-        <span className="fa fa-bars" onClick={this.slide}></span>
+        <span className="fa fa-bars" onTouchStart={this.slide}></span>
         <h1 className={styles.title}></h1>
       </header>
     )

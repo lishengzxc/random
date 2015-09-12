@@ -5,10 +5,9 @@ var GroupItem = React.createClass({
   render: function () {
     return (
       <li className={styles.li}>{
-      //{JSON.stringify(this.props.result)}
       this.props.result.map(function (result) {
         return (
-          <div className={styles.member}>
+          <div className={styles.member} key={result}>
             {result}
           </div>
         );
