@@ -143,8 +143,10 @@
 	          _react2['default'].createElement(RouteHandler, null)
 	        )
 	      ),
-	      _react2['default'].createElement(_viewsAddTeamButtonAddTeamButton2['default'], { visibility: window.location.hash.substr(1) === '/addTeam' || window.location.hash.substr(1) === '/setup' || window.location.hash.substr(1) === '/randomPage' || window.location.hash.substr(1) === '/editTeam' }),
-	      _react2['default'].createElement(_viewsEditTeamButtonEditTeamButton2['default'], { visibility: window.location.hash.substr(1) === '/randomPage' }),
+	      _react2['default'].createElement(_viewsAddTeamButtonAddTeamButton2['default'], { visibility: window.location.hash.substr(1) === '/addTeam' || window.location.hash.substr(1) === '/setup' || window.location.hash.substr(1) === '/randomPage' || window.location.hash.substr(1) === '/editTeam'
+	      }),
+	      _react2['default'].createElement(_viewsEditTeamButtonEditTeamButton2['default'], { visibility: window.location.hash.substr(1) === '/randomPage'
+	      }),
 	      '}/>'
 	    );
 	  }
@@ -199,7 +201,7 @@
 
 
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n  -webkit-user-select: none; }\n\nbody, ul, li {\n  margin: 0;\n  padding: 0; }\n\nhtml, body {\n  height: 100%; }\n\nbody {\n  font: 62.5% san-serif; }\n\nli {\n  list-style: none; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box; }\n\nbody, ul, li {\n  margin: 0;\n  padding: 0; }\n\nhtml, body {\n  height: 100%; }\n\nbody {\n  font: 62.5% san-serif; }\n\nli {\n  list-style: none; }\n", ""]);
 
 	// exports
 
@@ -24250,7 +24252,7 @@
 	    var members = this.props.male.concat(this.props.female);
 	    return _react2['default'].createElement(
 	      'li',
-	      { className: _TeamListItemScss2['default'].item, onTouchStart: this.chooseChoice },
+	      { className: _TeamListItemScss2['default'].item, onClick: this.chooseChoice },
 	      _react2['default'].createElement(
 	        'div',
 	        { className: _TeamListItemScss2['default'].content },
@@ -24969,7 +24971,7 @@
 	      _react2['default'].createElement(
 	        'form',
 	        { className: _RandomPageScss2['default'].inputbox },
-	        _react2['default'].createElement('input', { type: 'number', className: _RandomPageScss2['default'].numberinput, ref: 'numberinput', onChange: this.getNum, defaultValue: this.state.num }),
+	        _react2['default'].createElement('input', { type: 'number', className: _RandomPageScss2['default'].numberinput, ref: 'numberinput', onChange: this.getNum, value: this.state.num }),
 	        _react2['default'].createElement(
 	          'div',
 	          { className: _RandomPageScss2['default'].checksame },
@@ -24981,7 +24983,7 @@
 	        'ul',
 	        null,
 	        this.state.randomList.map(function (result) {
-	          return _react2['default'].createElement(_GroupItemGroupItem2['default'], { result: result });
+	          return _react2['default'].createElement(_GroupItemGroupItem2['default'], { result: result, key: result });
 	        })
 	      )
 	    );
@@ -25026,7 +25028,7 @@
 
 
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n._8MJkPXkFraRpACp5isnbK {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n._34F2g44JhnoKF_3skkH9xz {\n  width: 70%;\n  height: 40px;\n  border-radius: 6px;\n  padding: 0 10px;\n  border: 1px solid #ccc;\n  margin-right: 10px; }\n\n._2drP9NgvTonAVBj66IeZ44 {\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1; }\n  ._2drP9NgvTonAVBj66IeZ44 input {\n    position: absolute;\n    opacity: 0; }\n    ._2drP9NgvTonAVBj66IeZ44 input:checked ~ label::after {\n      content: '\\5206\\6027\\522B'; }\n  ._2drP9NgvTonAVBj66IeZ44 label {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 40px;\n    border: 1px solid #ccc;\n    border-radius: 6px;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    ._2drP9NgvTonAVBj66IeZ44 label::after {\n      content: '\\4E0D\\5206\\6027\\522B'; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n._8MJkPXkFraRpACp5isnbK {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n._34F2g44JhnoKF_3skkH9xz {\n  width: 70%;\n  height: 40px;\n  border-radius: 6px;\n  padding: 0 10px;\n  border: 1px solid #ccc;\n  margin-right: 10px;\n  -webkit-appearance: none; }\n\n._2drP9NgvTonAVBj66IeZ44 {\n  -webkit-box-flex: 1;\n  -webkit-flex-grow: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1; }\n  ._2drP9NgvTonAVBj66IeZ44 input {\n    position: absolute;\n    opacity: 0; }\n    ._2drP9NgvTonAVBj66IeZ44 input:checked ~ label::after {\n      content: '\\5206\\6027\\522B'; }\n  ._2drP9NgvTonAVBj66IeZ44 label {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 40px;\n    border: 1px solid #ccc;\n    border-radius: 6px;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    ._2drP9NgvTonAVBj66IeZ44 label::after {\n      content: '\\4E0D\\5206\\6027\\522B'; }\n", ""]);
 
 	// exports
 	exports.locals = {
@@ -25056,7 +25058,7 @@
 	  },
 
 	  divide: function divide(flag, array, n) {
-	    if (!n) return;
+	    if (!n || n <= 0) return;
 	    var ret = [];
 	    if (flag) {
 	      while (array.male.length) {
@@ -25107,12 +25109,10 @@
 	    return _react2['default'].createElement(
 	      'li',
 	      { className: _GroupItemScss2['default'].li },
-
-	      //{JSON.stringify(this.props.result)}
 	      this.props.result.map(function (result) {
 	        return _react2['default'].createElement(
 	          'div',
-	          { className: _GroupItemScss2['default'].member },
+	          { className: _GroupItemScss2['default'].member, key: result },
 	          result
 	        );
 	      })
