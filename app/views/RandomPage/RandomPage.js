@@ -22,7 +22,7 @@ var RandomPage = React.createClass({
   },
 
   componentDidMount: function () {
-    this.refs.numberinput.getDOMNode().focus();
+    //this.refs.numberinput.getDOMNode().focus();
   },
 
   getNum: function (event) {
@@ -47,7 +47,7 @@ var RandomPage = React.createClass({
     return (
       <div>
         <form className={styles.inputbox}>
-          <input type="number" className={styles.numberinput} ref="numberinput" onChange={this.getNum} defaultValue={this.state.num} />
+          <input type="number" className={styles.numberinput} ref="numberinput" onChange={this.getNum} value={this.state.num} />
           <div className={styles.checksame}>
             <input type="checkbox" id="same" checked={this.state.isSameSex} onChange={this.getIsSameSex} /><label htmlFor="same"></label>
           </div>
