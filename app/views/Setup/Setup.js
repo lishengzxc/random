@@ -1,14 +1,14 @@
 import styles from './Setup.scss';
 import React from 'react';
+import MessageBox from '../../views/MessageBox/MessageBox';
 import clearTeamActionCreators from '../../actions/clearTeam-action-creators';
 
 var Setup = React.createClass({
   clear: function () {
-    if (confirm('确认要清空所有数据ಥ_ಥ')) {
+    MessageBox.open('确认要清空所有数据吗ಥ_ಥ', function () {
       clearTeamActionCreators.emitClearTeam();
-      alert('数据已清空>ㅂ<');
       window.location.href = '#/';
-    }
+    });
   },
 
   render: function () {

@@ -8,6 +8,7 @@ import AddTeamButton from './views/AddTeamButton/AddTeamButton';
 import EditTeamButton from './views/EditTeamButton/EditTeamButton';
 import AddTeamList from './views/AddTeamList/AddTeamList';
 import Setup from './views/Setup/Setup';
+import MessageBox from './views/MessageBox/MessageBox';
 import RandomPage from './views/RandomPage/RandomPage';
 import cx from 'classnames';
 import Router from 'react-router';
@@ -33,6 +34,12 @@ var App = React.createClass({
 
   componentWillUnmount: function () {
     RandomStore.removeChangeListener(this.onSlide);
+  },
+
+  pop: function () {
+    MessageBox.open('messagebox', function () {
+      alert('ok');
+    });
   },
 
   render: function () {

@@ -1,0 +1,61 @@
+:global(.pop) {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.3);
+  z-index: 1;
+}
+
+:local(.messagebox) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 70%;
+  min-height: 135px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  animation: messagebox 200ms linear;
+}
+
+:local(.content) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 45px;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+:local(.buttongroup) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 45px;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+  button {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    font-size: 15px;
+    &:last-of-type {
+      border-left: 1px solid #ddd;
+      color: #0e90d2;
+    }
+
+  }
+}
+
+@keyframes messagebox {
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}

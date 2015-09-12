@@ -1,5 +1,6 @@
 import styles from './AddTeamList.scss';
 import React from 'react';
+import MessageBox from '../../views/MessageBox/MessageBox';
 import cx from 'classnames';
 import addTeamActionCreators from '../../actions/addTeam-action-creators';
 import editTeamActionCreators from '../../actions/editTeam-action-creators';
@@ -26,15 +27,14 @@ var AddTeamList = React.createClass({
       female: female.split(' ')
     };
 
-    if (confirm('确认提交吗>ㅂ<')) {
+    MessageBox.open('确认提交吗>ㅂ<', function () {
       if (window.location.hash.substr(1) === '/addTeam') {
         addTeamActionCreators.emitAddTeam(content);
       } else {
         editTeamActionCreators.emitEditTeam(content);
       }
-
       window.location.href = '#/';
-    }
+    });
   },
 
   render: function () {
