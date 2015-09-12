@@ -13,7 +13,7 @@ var TeamList = React.createClass({
   render: function () {
     var teamList = this.state.teamList;
     return (
-      <ul>{
+      <ul className={styles.ul}>{
         teamList.map(function (result) {
           return <TeamListItem key={result.id} male={result.male} female={result.female} id={result.id}/>
         })
