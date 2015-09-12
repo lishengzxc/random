@@ -1,6 +1,12 @@
 :local(.inputbox) {
+  position: relative;
   display: flex;
   align-items: center;
+  margin-top: 10px;
+  height: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;background-color: #fff;
+  z-index: 1;
 }
 
 :local(.numberinput) {
@@ -11,6 +17,7 @@
   border: 1px solid #ccc;
   margin-right: 10px;
   -webkit-appearance: none;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 :local(.checksame) {
@@ -26,12 +33,27 @@
     display: flex;
     width: 100%;
     height: 40px;
+    font-size: 13px;
     border: 1px solid #ccc;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     &::after {
       content: '不分性别';
     }
   }
+}
+
+:local(.ul) {
+  top: 100px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+:local(.div) {
 }

@@ -9,10 +9,11 @@ body, ul, li {
 
 html, body {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
-  font: 62.5% san-serif;
+  font: 62.5% "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
 }
 
 li {
