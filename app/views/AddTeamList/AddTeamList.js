@@ -42,7 +42,7 @@ var AddTeamList = React.createClass({
     var maleStr = this.state.nowTeam ? this.state.nowTeam.male.join(' ') : '';
     var femaleStr = this.state.nowTeam ? this.state.nowTeam.female.join(' ') : '';
     return (
-      <form onSubmit={this.addTeamList}>
+      <form className="in" onSubmit={this.addTeamList}>
         <div className={cx(styles.group)}>
           <div className={cx(styles.babel, styles.male)}>男生</div>
           <textarea className={styles.textarea} placeholder="某 某 某" ref='maleValue' defaultValue={maleStr} />

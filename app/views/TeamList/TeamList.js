@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './TeamList.scss';
+import cx from 'classnames';
 import TeamListItem from '../TeamListItem/TeamListItem';
 import RandomStore from '../../stores/random-store';
 
@@ -13,7 +14,7 @@ var TeamList = React.createClass({
   render: function () {
     var teamList = this.state.teamList;
     return (
-      <ul className={styles.ul}>{
+      <ul className={cx(styles.ul, 'in')}>{
         teamList.map(function (result) {
           return <TeamListItem key={result.id} male={result.male} female={result.female} id={result.id}/>
         })

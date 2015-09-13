@@ -13,7 +13,7 @@ var Setup = React.createClass({
 
   render: function () {
     return (
-      <div>
+      <div className="in">
         <button className={styles.button} onClick={this.clear}>清除数据</button>
       </div>
     )

@@ -19,3 +19,12 @@ body {
 li {
   list-style: none;
 }
+
+:global(.in) {
+  animation: slideinfromright 250ms ease-in;
+}
+
+@keyframes slideinfromright {
+  from { opacity: 0.01; }
+  to { opacity: 1; }
+}

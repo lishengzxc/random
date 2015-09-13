@@ -36,12 +36,6 @@ var App = React.createClass({
     RandomStore.removeChangeListener(this.onSlide);
   },
 
-  pop: function () {
-    MessageBox.open('messagebox', function () {
-      alert('ok');
-    });
-  },
-
   render: function () {
     var classList = this.state.pageState ? [styles.page, styles.slide] : [styles.page];
     return (
