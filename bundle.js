@@ -82,11 +82,11 @@
 
 	var _viewsAddTeamListAddTeamList2 = _interopRequireDefault(_viewsAddTeamListAddTeamList);
 
-	var _viewsSetupSetup = __webpack_require__(215);
+	var _viewsSetupSetup = __webpack_require__(218);
 
 	var _viewsSetupSetup2 = _interopRequireDefault(_viewsSetupSetup);
 
-	var _viewsMessageBoxMessageBox = __webpack_require__(219);
+	var _viewsMessageBoxMessageBox = __webpack_require__(213);
 
 	var _viewsMessageBoxMessageBox2 = _interopRequireDefault(_viewsMessageBoxMessageBox);
 
@@ -129,12 +129,6 @@
 
 	  componentWillUnmount: function componentWillUnmount() {
 	    _storesRandomStore2['default'].removeChangeListener(this.onSlide);
-	  },
-
-	  pop: function pop() {
-	    _viewsMessageBoxMessageBox2['default'].open('messagebox', function () {
-	      alert('ok');
-	    });
 	  },
 
 	  render: function render() {
@@ -210,10 +204,12 @@
 
 
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box; }\n\nbody, ul, li {\n  margin: 0;\n  padding: 0; }\n\nhtml, body {\n  height: 100%;\n  overflow: hidden; }\n\nbody {\n  font: 62.5% \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial, sans-serif; }\n\nli {\n  list-style: none; }\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box; }\n\nbody, ul, li {\n  margin: 0;\n  padding: 0; }\n\nhtml, body {\n  height: 100%;\n  overflow: hidden; }\n\nbody {\n  font: 62.5% \"Helvetica Neue Light\", \"HelveticaNeue-Light\", \"Helvetica Neue\", Calibri, Helvetica, Arial, sans-serif; }\n\nli {\n  list-style: none; }\n\n.in {\n  -webkit-animation: _21zcMXp50OGl1CnrQNcqrX 250ms ease-in;\n          animation: _21zcMXp50OGl1CnrQNcqrX 250ms ease-in; }\n\n@-webkit-keyframes _21zcMXp50OGl1CnrQNcqrX {\n  from {\n    opacity: 0.01; }\n  to {\n    opacity: 1; } }\n\n@keyframes _21zcMXp50OGl1CnrQNcqrX {\n  from {\n    opacity: 0.01; }\n  to {\n    opacity: 1; } }\n", ""]);
 
 	// exports
-
+	exports.locals = {
+		"slideinfromright": "_21zcMXp50OGl1CnrQNcqrX"
+	};
 
 /***/ },
 /* 3 */
@@ -531,7 +527,7 @@
 
 
 	// module
-	exports.push([module.id, "._1QOZ4JvHUdW-BGhU6n1Gs3 {\n  position: relative;\n  height: 100%;\n  overflow: hidden;\n  background-color: #fff;\n  -webkit-transition: -webkit-transform 200ms linear;\n          transition: transform 200ms linear; }\n\n._1DSTsuU12TpbyGo8mRqKLQ {\n  -webkit-transform: translate(60vw);\n      -ms-transform: translate(60vw);\n          transform: translate(60vw); }\n\n._2yQ69TbsdlYcprUurzDR0W {\n  position: relative;\n  overflow: hidden;\n  padding: 40px 10px 10px 10px;\n  height: 100%;\n  background-color: #fff; }\n\n._3cf_ZD19akdYNFqQncaBd_ {\n  overflow: hidden;\n  height: 100%; }\n", ""]);
+	exports.push([module.id, "._1QOZ4JvHUdW-BGhU6n1Gs3 {\n  position: relative;\n  height: 100%;\n  overflow: hidden;\n  background-color: #fff;\n  -webkit-transition: -webkit-transform 200ms linear;\n          transition: transform 200ms linear; }\n\n._1DSTsuU12TpbyGo8mRqKLQ {\n  -webkit-transform: translate(60vw);\n      -ms-transform: translate(60vw);\n          transform: translate(60vw); }\n\n._2yQ69TbsdlYcprUurzDR0W {\n  position: relative;\n  overflow: hidden;\n  padding: 50px 10px 10px 10px;\n  height: 100%;\n  background-color: #fff; }\n\n._3cf_ZD19akdYNFqQncaBd_ {\n  overflow: hidden;\n  height: 100%; }\n", ""]);
 
 	// exports
 	exports.locals = {
@@ -24113,7 +24109,7 @@
 
 
 	// module
-	exports.push([module.id, "._3UDgtNBD1BOFb-i2ZWUNOg {\n  position: fixed;\n  width: 100%;\n  height: 40px;\n  background-color: #fff;\n  z-index: 1;\n  -webkit-transition: -webkit-transform 200ms linear;\n          transition: transform 200ms linear;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }\n  ._3UDgtNBD1BOFb-i2ZWUNOg ._1WDq4VsSJgBJC3VAJhUL6V {\n    text-align: center;\n    line-height: 40px;\n    font-size: 1rem;\n    margin: 0; }\n\n._22QQhy4ROVkgzZGmeKkn68 {\n  -webkit-transform: translate(60vw);\n      -ms-transform: translate(60vw);\n          transform: translate(60vw); }\n\n.fa-bars {\n  position: absolute;\n  padding: 10px 10px 10px 0;\n  top: 50%;\n  left: 10px;\n  -webkit-transform: translateY(-50%);\n      -ms-transform: translateY(-50%);\n          transform: translateY(-50%);\n  font-size: 20px;\n  cursor: pointer; }\n", ""]);
+	exports.push([module.id, "._3UDgtNBD1BOFb-i2ZWUNOg {\n  position: fixed;\n  width: 100%;\n  height: 50px;\n  background-color: #fff;\n  z-index: 1;\n  -webkit-transition: -webkit-transform 200ms linear;\n          transition: transform 200ms linear;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }\n  ._3UDgtNBD1BOFb-i2ZWUNOg ._1WDq4VsSJgBJC3VAJhUL6V {\n    text-align: center;\n    line-height: 40px;\n    font-size: 1rem;\n    margin: 0; }\n\n._22QQhy4ROVkgzZGmeKkn68 {\n  -webkit-transform: translate(60vw);\n      -ms-transform: translate(60vw);\n          transform: translate(60vw); }\n\n.fa-bars {\n  position: absolute;\n  padding: 10px;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n      -ms-transform: translateY(-50%);\n          transform: translateY(-50%);\n  font-size: 25px;\n  cursor: pointer; }\n", ""]);
 
 	// exports
 	exports.locals = {
@@ -24142,6 +24138,10 @@
 
 	var _TeamListScss2 = _interopRequireDefault(_TeamListScss);
 
+	var _classnames = __webpack_require__(190);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
 	var _TeamListItemTeamListItem = __webpack_require__(199);
 
 	var _TeamListItemTeamListItem2 = _interopRequireDefault(_TeamListItemTeamListItem);
@@ -24165,7 +24165,7 @@
 	    var teamList = this.state.teamList;
 	    return _react2['default'].createElement(
 	      'ul',
-	      { className: _TeamListScss2['default'].ul },
+	      { className: (0, _classnames2['default'])(_TeamListScss2['default'].ul, 'in') },
 	      teamList.map(function (result) {
 	        return _react2['default'].createElement(_TeamListItemTeamListItem2['default'], { key: result.id, male: result.male, female: result.female, id: result.id });
 	      })
@@ -24579,7 +24579,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _viewsMessageBoxMessageBox = __webpack_require__(219);
+	var _viewsMessageBoxMessageBox = __webpack_require__(213);
 
 	var _viewsMessageBoxMessageBox2 = _interopRequireDefault(_viewsMessageBoxMessageBox);
 
@@ -24587,11 +24587,11 @@
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _actionsAddTeamActionCreators = __webpack_require__(213);
+	var _actionsAddTeamActionCreators = __webpack_require__(216);
 
 	var _actionsAddTeamActionCreators2 = _interopRequireDefault(_actionsAddTeamActionCreators);
 
-	var _actionsEditTeamActionCreators = __webpack_require__(214);
+	var _actionsEditTeamActionCreators = __webpack_require__(217);
 
 	var _actionsEditTeamActionCreators2 = _interopRequireDefault(_actionsEditTeamActionCreators);
 
@@ -24642,7 +24642,7 @@
 	    var femaleStr = this.state.nowTeam ? this.state.nowTeam.female.join(' ') : '';
 	    return _react2['default'].createElement(
 	      'form',
-	      { onSubmit: this.addTeamList },
+	      { className: 'in', onSubmit: this.addTeamList },
 	      _react2['default'].createElement(
 	        'div',
 	        { className: (0, _classnames2['default'])(_AddTeamListScss2['default'].group) },
@@ -24710,7 +24710,7 @@
 
 
 	// module
-	exports.push([module.id, "._3YdlNy9sNogL-OznNGKqI7 {\n  font-size: 16px;\n  margin: 10px 0 15px 0;\n  padding-left: 5px;\n  color: #aaa; }\n  ._3YdlNy9sNogL-OznNGKqI7._1rhcSH3gbDjc240L7N1-1V {\n    border-left: 5px solid #28c7ff; }\n  ._3YdlNy9sNogL-OznNGKqI7._1ntDh1dedU1S2dnPVaNriE {\n    border-left: 5px solid #ffacee; }\n\n._3U0SutfJ8bgi3Jh99OOT1Z {\n  width: 100%;\n  height: 100px;\n  padding: 10px;\n  border: 1px solid #ccc;\n  border-radius: 6px;\n  resize: none;\n  -webkit-appearance: none;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }\n\n._1yn_QfXBtP8SJsgFGF5WGx {\n  width: 100%;\n  height: 40px;\n  margin-top: 20px;\n  font-size: 20px;\n  border: 1px solid #ccc;\n  background-color: #fff;\n  border-radius: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }\n", ""]);
+	exports.push([module.id, "._3YdlNy9sNogL-OznNGKqI7 {\n  font-size: 16px;\n  margin: 10px 0 15px 0;\n  padding-left: 5px;\n  color: #aaa; }\n  ._3YdlNy9sNogL-OznNGKqI7._1rhcSH3gbDjc240L7N1-1V {\n    border-left: 5px solid #28c7ff; }\n  ._3YdlNy9sNogL-OznNGKqI7._1ntDh1dedU1S2dnPVaNriE {\n    border-left: 5px solid #ffacee; }\n\n._3U0SutfJ8bgi3Jh99OOT1Z {\n  width: 100%;\n  height: 100px;\n  padding: 10px;\n  border: 1px solid #ccc;\n  border-radius: 6px;\n  resize: none;\n  -webkit-appearance: none;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }\n\n._1yn_QfXBtP8SJsgFGF5WGx {\n  width: 100%;\n  height: 40px;\n  margin-top: 20px;\n  font-size: 20px;\n  border: 1px solid #ccc;\n  background-color: #fff;\n  border-radius: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }\n\n._3NNchb3bA-67yMlX23pgz {\n  -webkit-animation: _18Q2gjwVERNNcerEXHBqd2 350ms ease-in;\n          animation: _18Q2gjwVERNNcerEXHBqd2 350ms ease-in; }\n", ""]);
 
 	// exports
 	exports.locals = {
@@ -24718,195 +24718,15 @@
 		"male": "_1rhcSH3gbDjc240L7N1-1V",
 		"female": "_1ntDh1dedU1S2dnPVaNriE",
 		"textarea": "_3U0SutfJ8bgi3Jh99OOT1Z",
-		"button": "_1yn_QfXBtP8SJsgFGF5WGx"
+		"button": "_1yn_QfXBtP8SJsgFGF5WGx",
+		"div": "_3NNchb3bA-67yMlX23pgz",
+		"slideinfromright": "_18Q2gjwVERNNcerEXHBqd2"
 	};
 
 /***/ },
 /* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	var _dispatcherAppDispatcher = __webpack_require__(185);
-
-	var _dispatcherAppDispatcher2 = _interopRequireDefault(_dispatcherAppDispatcher);
-
-	var AddTeam = {
-	  emitAddTeam: function emitAddTeam(content) {
-	    var action = {
-	      actionType: "EMIT_ADDTEAM",
-	      content: content
-	    };
-	    _dispatcherAppDispatcher2["default"].dispatch(action);
-	  }
-	};
-
-	exports["default"] = AddTeam;
-	module.exports = exports["default"];
-
-/***/ },
-/* 214 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	var _dispatcherAppDispatcher = __webpack_require__(185);
-
-	var _dispatcherAppDispatcher2 = _interopRequireDefault(_dispatcherAppDispatcher);
-
-	var EditTeam = {
-	  emitEditTeam: function emitEditTeam(content) {
-	    var action = {
-	      actionType: "EMIT_EDITTEAM",
-	      content: content
-	    };
-	    _dispatcherAppDispatcher2["default"].dispatch(action);
-	  }
-	};
-
-	exports["default"] = EditTeam;
-	module.exports = exports["default"];
-
-/***/ },
-/* 215 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _SetupScss = __webpack_require__(216);
-
-	var _SetupScss2 = _interopRequireDefault(_SetupScss);
-
-	var _react = __webpack_require__(7);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _viewsMessageBoxMessageBox = __webpack_require__(219);
-
-	var _viewsMessageBoxMessageBox2 = _interopRequireDefault(_viewsMessageBoxMessageBox);
-
-	var _actionsClearTeamActionCreators = __webpack_require__(218);
-
-	var _actionsClearTeamActionCreators2 = _interopRequireDefault(_actionsClearTeamActionCreators);
-
-	var Setup = _react2['default'].createClass({
-	  displayName: 'Setup',
-
-	  clear: function clear() {
-	    _viewsMessageBoxMessageBox2['default'].open('确认要清空所有数据吗ಥ_ಥ', function () {
-	      _actionsClearTeamActionCreators2['default'].emitClearTeam();
-	      window.location.href = '#/';
-	    });
-	  },
-
-	  render: function render() {
-	    return _react2['default'].createElement(
-	      'div',
-	      null,
-	      _react2['default'].createElement(
-	        'button',
-	        { className: _SetupScss2['default'].button, onClick: this.clear },
-	        '清除数据'
-	      )
-	    );
-	  }
-	});
-
-	exports['default'] = Setup;
-	module.exports = exports['default'];
-
-/***/ },
-/* 216 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(217);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js?modules!./../../../node_modules/autoprefixer-loader/index.js!./../../../node_modules/sass-loader/index.js!./Setup.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js?modules!./../../../node_modules/autoprefixer-loader/index.js!./../../../node_modules/sass-loader/index.js!./Setup.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 217 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "._3ZbUD47nvO1B-7HWjCzOlh {\n  width: 100%;\n  height: 40px;\n  margin-top: 10px;\n  color: #fff;\n  font-size: 14px;\n  border: 1px solid #F95353;\n  background-color: #F95353;\n  border-radius: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }\n", ""]);
-
-	// exports
-	exports.locals = {
-		"button": "_3ZbUD47nvO1B-7HWjCzOlh"
-	};
-
-/***/ },
-/* 218 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	var _dispatcherAppDispatcher = __webpack_require__(185);
-
-	var _dispatcherAppDispatcher2 = _interopRequireDefault(_dispatcherAppDispatcher);
-
-	var ClearTeam = {
-	  emitClearTeam: function emitClearTeam() {
-	    var action = {
-	      actionType: "EMIT_CLEARTEAM"
-	    };
-	    _dispatcherAppDispatcher2["default"].dispatch(action);
-	  }
-	};
-
-	exports["default"] = ClearTeam;
-	module.exports = exports["default"];
-
-/***/ },
-/* 219 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
@@ -24919,7 +24739,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _MessageBoxScss = __webpack_require__(220);
+	var _MessageBoxScss = __webpack_require__(214);
 
 	var _MessageBoxScss2 = _interopRequireDefault(_MessageBoxScss);
 
@@ -24973,13 +24793,13 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 220 */
+/* 214 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(221);
+	var content = __webpack_require__(215);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(4)(content, {});
@@ -24999,7 +24819,7 @@
 	}
 
 /***/ },
-/* 221 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(3)();
@@ -25007,7 +24827,7 @@
 
 
 	// module
-	exports.push([module.id, ".pop {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: rgba(0, 0, 0, 0.3);\n  z-index: 1; }\n\n._2ezI5sw3H0LcYgpbYphuea {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%) scale(1);\n      -ms-transform: translate(-50%, -50%) scale(1);\n          transform: translate(-50%, -50%) scale(1);\n  width: 70%;\n  min-height: 135px;\n  background-color: #fff;\n  -webkit-animation: _2ezI5sw3H0LcYgpbYphuea 200ms linear;\n          animation: _2ezI5sw3H0LcYgpbYphuea 200ms linear; }\n\n._1g_v8nS7n2ncNYgki8Bsn2 {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 45px;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n._2Xm5YLLUpmt842gOWyAUST {\n  position: absolute;\n  left: 0;\n  right: 0;\n  height: 45px;\n  bottom: 0;\n  border-top: 1px solid #ddd; }\n  ._2Xm5YLLUpmt842gOWyAUST button {\n    width: 50%;\n    height: 100%;\n    border: none;\n    background-color: #fff;\n    font-size: 15px; }\n    ._2Xm5YLLUpmt842gOWyAUST button:last-of-type {\n      border-left: 1px solid #ddd;\n      color: #0e90d2; }\n\n@-webkit-keyframes _2ezI5sw3H0LcYgpbYphuea {\n  50% {\n    -webkit-transform: translate(-50%, -50%) scale(1.2);\n            transform: translate(-50%, -50%) scale(1.2); } }\n\n@keyframes _2ezI5sw3H0LcYgpbYphuea {\n  50% {\n    -webkit-transform: translate(-50%, -50%) scale(1.2);\n            transform: translate(-50%, -50%) scale(1.2); } }\n", ""]);
+	exports.push([module.id, ".pop {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background-color: rgba(0, 0, 0, 0.3);\n  z-index: 1; }\n\n._2ezI5sw3H0LcYgpbYphuea {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%) scale(1);\n      -ms-transform: translate(-50%, -50%) scale(1);\n          transform: translate(-50%, -50%) scale(1);\n  width: 70%;\n  min-height: 135px;\n  background-color: #fff;\n  border-radius: 6px;\n  overflow: hidden;\n  -webkit-animation: _2ezI5sw3H0LcYgpbYphuea 200ms linear;\n          animation: _2ezI5sw3H0LcYgpbYphuea 200ms linear; }\n\n._1g_v8nS7n2ncNYgki8Bsn2 {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 45px;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  font-size: 15px;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n._2Xm5YLLUpmt842gOWyAUST {\n  position: absolute;\n  left: 0;\n  right: 0;\n  height: 45px;\n  bottom: 0;\n  border-top: 1px solid #ddd; }\n  ._2Xm5YLLUpmt842gOWyAUST button {\n    width: 50%;\n    height: 100%;\n    border: none;\n    background-color: #fff;\n    font-size: 15px; }\n    ._2Xm5YLLUpmt842gOWyAUST button:last-of-type {\n      border-left: 1px solid #ddd;\n      color: #0e90d2; }\n\n@-webkit-keyframes _2ezI5sw3H0LcYgpbYphuea {\n  50% {\n    -webkit-transform: translate(-50%, -50%) scale(1.2);\n            transform: translate(-50%, -50%) scale(1.2); } }\n\n@keyframes _2ezI5sw3H0LcYgpbYphuea {\n  50% {\n    -webkit-transform: translate(-50%, -50%) scale(1.2);\n            transform: translate(-50%, -50%) scale(1.2); } }\n", ""]);
 
 	// exports
 	exports.locals = {
@@ -25015,6 +24835,188 @@
 		"content": "_1g_v8nS7n2ncNYgki8Bsn2",
 		"buttongroup": "_2Xm5YLLUpmt842gOWyAUST"
 	};
+
+/***/ },
+/* 216 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _dispatcherAppDispatcher = __webpack_require__(185);
+
+	var _dispatcherAppDispatcher2 = _interopRequireDefault(_dispatcherAppDispatcher);
+
+	var AddTeam = {
+	  emitAddTeam: function emitAddTeam(content) {
+	    var action = {
+	      actionType: "EMIT_ADDTEAM",
+	      content: content
+	    };
+	    _dispatcherAppDispatcher2["default"].dispatch(action);
+	  }
+	};
+
+	exports["default"] = AddTeam;
+	module.exports = exports["default"];
+
+/***/ },
+/* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _dispatcherAppDispatcher = __webpack_require__(185);
+
+	var _dispatcherAppDispatcher2 = _interopRequireDefault(_dispatcherAppDispatcher);
+
+	var EditTeam = {
+	  emitEditTeam: function emitEditTeam(content) {
+	    var action = {
+	      actionType: "EMIT_EDITTEAM",
+	      content: content
+	    };
+	    _dispatcherAppDispatcher2["default"].dispatch(action);
+	  }
+	};
+
+	exports["default"] = EditTeam;
+	module.exports = exports["default"];
+
+/***/ },
+/* 218 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _SetupScss = __webpack_require__(219);
+
+	var _SetupScss2 = _interopRequireDefault(_SetupScss);
+
+	var _react = __webpack_require__(7);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _viewsMessageBoxMessageBox = __webpack_require__(213);
+
+	var _viewsMessageBoxMessageBox2 = _interopRequireDefault(_viewsMessageBoxMessageBox);
+
+	var _actionsClearTeamActionCreators = __webpack_require__(221);
+
+	var _actionsClearTeamActionCreators2 = _interopRequireDefault(_actionsClearTeamActionCreators);
+
+	var Setup = _react2['default'].createClass({
+	  displayName: 'Setup',
+
+	  clear: function clear() {
+	    _viewsMessageBoxMessageBox2['default'].open('确认要清空所有数据吗ಥ_ಥ', function () {
+	      _actionsClearTeamActionCreators2['default'].emitClearTeam();
+	      window.location.href = '#/';
+	    });
+	  },
+
+	  render: function render() {
+	    return _react2['default'].createElement(
+	      'div',
+	      { className: 'in' },
+	      _react2['default'].createElement(
+	        'button',
+	        { className: _SetupScss2['default'].button, onClick: this.clear },
+	        '清除数据'
+	      )
+	    );
+	  }
+	});
+
+	exports['default'] = Setup;
+	module.exports = exports['default'];
+
+/***/ },
+/* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(220);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js?modules!./../../../node_modules/autoprefixer-loader/index.js!./../../../node_modules/sass-loader/index.js!./Setup.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js?modules!./../../../node_modules/autoprefixer-loader/index.js!./../../../node_modules/sass-loader/index.js!./Setup.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 220 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "._3ZbUD47nvO1B-7HWjCzOlh {\n  width: 100%;\n  height: 40px;\n  margin-top: 10px;\n  color: #fff;\n  font-size: 14px;\n  border: 1px solid #F95353;\n  background-color: #F95353;\n  border-radius: 6px;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }\n", ""]);
+
+	// exports
+	exports.locals = {
+		"button": "_3ZbUD47nvO1B-7HWjCzOlh"
+	};
+
+/***/ },
+/* 221 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _dispatcherAppDispatcher = __webpack_require__(185);
+
+	var _dispatcherAppDispatcher2 = _interopRequireDefault(_dispatcherAppDispatcher);
+
+	var ClearTeam = {
+	  emitClearTeam: function emitClearTeam() {
+	    var action = {
+	      actionType: "EMIT_CLEARTEAM"
+	    };
+	    _dispatcherAppDispatcher2["default"].dispatch(action);
+	  }
+	};
+
+	exports["default"] = ClearTeam;
+	module.exports = exports["default"];
 
 /***/ },
 /* 222 */
@@ -25072,9 +25074,7 @@
 	    if (!this.state.nowTeam) window.location.href = '#/';
 	  },
 
-	  componentDidMount: function componentDidMount() {
-	    //this.refs.numberinput.getDOMNode().focus();
-	  },
+	  componentDidMount: function componentDidMount() {},
 
 	  getNum: function getNum(event) {
 	    this.state.num = event.target.value;
@@ -25097,7 +25097,7 @@
 	  render: function render() {
 	    return _react2['default'].createElement(
 	      'div',
-	      { className: _RandomPageScss2['default'].div },
+	      { className: 'in' },
 	      _react2['default'].createElement(
 	        'form',
 	        { className: _RandomPageScss2['default'].inputbox },
@@ -25158,14 +25158,15 @@
 
 
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n._8MJkPXkFraRpACp5isnbK {\n  position: relative;\n  margin-top: 10px;\n  height: 50px;\n  padding-bottom: 10px;\n  border-bottom: 1px solid #ccc;\n  background-color: #fff;\n  z-index: 1; }\n\n._34F2g44JhnoKF_3skkH9xz {\n  display: inline-block;\n  font-size: 13px;\n  width: 70%;\n  height: 40px;\n  border-radius: 6px;\n  padding: 0 10px;\n  border: 1px solid #ccc;\n  margin-right: 2%;\n  -webkit-appearance: none;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }\n\n._2drP9NgvTonAVBj66IeZ44 {\n  display: inline-block;\n  width: 28%; }\n  ._2drP9NgvTonAVBj66IeZ44 input {\n    position: absolute;\n    opacity: 0; }\n    ._2drP9NgvTonAVBj66IeZ44 input:checked ~ label::after {\n      content: '\\5206\\6027\\522B'; }\n  ._2drP9NgvTonAVBj66IeZ44 label {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 40px;\n    font-size: 13px;\n    border: 1px solid #ccc;\n    border-radius: 6px;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }\n    ._2drP9NgvTonAVBj66IeZ44 label::after {\n      content: '\\4E0D\\5206\\6027\\522B'; }\n\n._1sL6SlKvpRoH3vl_j7n2u {\n  top: 100px;\n  left: 10px;\n  right: 10px;\n  bottom: 10px;\n  position: absolute;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch; }\n", ""]);
+	exports.push([module.id, "@charset \"UTF-8\";\n._8MJkPXkFraRpACp5isnbK {\n  position: relative;\n  margin-top: 10px;\n  height: 50px;\n  padding-bottom: 10px;\n  border-bottom: 1px solid #ccc;\n  background-color: #fff;\n  z-index: 1; }\n\n._34F2g44JhnoKF_3skkH9xz {\n  display: inline-block;\n  font-size: 13px;\n  width: 70%;\n  height: 40px;\n  border-radius: 6px;\n  padding: 0 10px;\n  border: 1px solid #ccc;\n  margin-right: 2%;\n  -webkit-appearance: none;\n  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }\n\n._2drP9NgvTonAVBj66IeZ44 {\n  display: inline-block;\n  width: 28%; }\n  ._2drP9NgvTonAVBj66IeZ44 input {\n    position: absolute;\n    opacity: 0; }\n    ._2drP9NgvTonAVBj66IeZ44 input:checked ~ label::after {\n      content: '\\5206\\6027\\522B'; }\n  ._2drP9NgvTonAVBj66IeZ44 label {\n    display: -webkit-box;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    width: 100%;\n    height: 40px;\n    font-size: 13px;\n    border: 1px solid #ccc;\n    border-radius: 6px;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }\n    ._2drP9NgvTonAVBj66IeZ44 label::after {\n      content: '\\4E0D\\5206\\6027\\522B'; }\n\n._1sL6SlKvpRoH3vl_j7n2u {\n  top: 110px;\n  left: 10px;\n  right: 10px;\n  bottom: 10px;\n  position: absolute;\n  overflow: auto;\n  -webkit-overflow-scrolling: touch; }\n\n.slide {\n  -webkit-animation: _30c-o4Yf5QelNY60gD8-0W 350ms ease-in;\n          animation: _30c-o4Yf5QelNY60gD8-0W 350ms ease-in; }\n\n@-webkit-keyframes _30c-o4Yf5QelNY60gD8-0W {\n  from {\n    -webkit-transform: translate3d(100%, 0, 0); }\n  to {\n    -webkit-transform: translate3d(0, 0, 0); } }\n\n@keyframes _30c-o4Yf5QelNY60gD8-0W {\n  from {\n    -webkit-transform: translate3d(100%, 0, 0); }\n  to {\n    -webkit-transform: translate3d(0, 0, 0); } }\n", ""]);
 
 	// exports
 	exports.locals = {
 		"inputbox": "_8MJkPXkFraRpACp5isnbK",
 		"numberinput": "_34F2g44JhnoKF_3skkH9xz",
 		"checksame": "_2drP9NgvTonAVBj66IeZ44",
-		"ul": "_1sL6SlKvpRoH3vl_j7n2u"
+		"ul": "_1sL6SlKvpRoH3vl_j7n2u",
+		"slideinfromright": "_30c-o4Yf5QelNY60gD8-0W"
 	};
 
 /***/ },
