@@ -2,8 +2,14 @@ import React from 'react';
 import styles from './MessageBox.scss';
 
 var MessageBox = React.createClass({
-  cancal: function () {
+
+  componentWillUnmount: function () {
     document.body.removeChild(document.querySelector('.pop'));
+  },
+
+  cancal: function () {
+
+    React.unmountComponentAtNode(document.querySelector('.pop'));
   },
 
   confirm: function () {
